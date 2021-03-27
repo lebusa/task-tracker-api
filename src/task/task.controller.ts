@@ -9,6 +9,8 @@ export class TaskController {
 
     @Post()
         async create(@Body() taskDto: TaskDto, @Ip() ipAddress) {
+            console.log(`bouta create new task...`)
+            console.log(taskDto)
         return this.taskService.create(taskDto);
     }
 
