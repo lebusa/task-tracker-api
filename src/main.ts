@@ -1,12 +1,15 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import * as morgan from 'morgan';
 
 const PORT = 4000;
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule, {logger: ['log', 'error', 'warn', 'debug', 'verbose'],});
+  const app = await NestFactory.create(AppModule,);
 
   app.enableCors();
+
+  app.use(morgan('tiny'));
 
   app.setGlobalPrefix('/api');
 
