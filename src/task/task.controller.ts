@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Put, Delete, Body, Param } from '@nestjs/common';
+import { Controller, Get, Post, Put, Delete, Body, Param, Ip } from '@nestjs/common';
 import { TaskDto } from './dto/task.dto';
 import { TaskService } from './task.service';
 import { Task } from './interfaces/task.interface';
@@ -8,7 +8,8 @@ export class TaskController {
     constructor(private readonly taskService: TaskService) {}
 
     @Post()
-        async create(@Body() taskDto: TaskDto) {
+        async create(@Body() taskDto: TaskDto, @Ip() ipAddress) {
+            console.log(`got something from ${ipAddress}`, taskDto);
         return this.taskService.create(taskDto);
     }
 
