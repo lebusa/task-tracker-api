@@ -28,7 +28,7 @@
 
 
 ## Local MongoDB Server
-This API uses a local MongoDB service, i.e. there must a locally running MongoDB client on the host machine. Optionally, cloud dabatase services can used for use as a cloud API.
+This API uses a local MongoDB service, i.e. there must a locally running MongoDB client on the host machine. Optionally, cloud dabatase services can used as a cloud API.
 
 Change the `HOST` variable in the database provider file (`/src/database/db.provider.ts`) to an appropriate URI.
 
