@@ -24,7 +24,13 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) framework TypeScript repository for the Tasks Tracker.
+
+
+## Local MongoDB Server
+This API uses a local MongoDB server as a service (SaaS), i.e. there must a locally running MongoDB client on the host machine. Other options exists (e.g. for connecting to a cloud backend).
+
+Change the `HOST` variable in the database provider file (`/src/database/db.provider.ts`) to an appropriate URI.
 
 ## Installation
 
