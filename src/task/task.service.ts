@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { Model } from 'mongoose';
-import { TaskDto } from './dto/task.dto';
-import { Task } from './interfaces/task.interface';
+import { TaskDto } from './task.dto';
+import { Task } from './task.interface';
 
 @Injectable()
 export class TaskService {

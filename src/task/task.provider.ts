@@ -1,5 +1,5 @@
 import { Connection } from 'mongoose';
-import { TaskSchema } from './schema/task.schema';
+import { TaskSchema } from './task.schema';
 
 export const taskProviders = [
     {

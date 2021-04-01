@@ -1,8 +1,11 @@
 {
-  "name": "task-tracker",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "name": "task-tracker-api",
+  "version": "1.0.0",
+  "description": "A tasks tracker API build with Nest.js framework",
+  "author": {
+    "name": "M. Lebusa",
+    "url": "https://github.com/lebusa"
+  },
   "private": true,
   "license": "UNLICENSED",
   "scripts": {

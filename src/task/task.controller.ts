@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Put, Delete, Body, Param, Ip } from '@nestjs/common';
-import { TaskDto } from './dto/task.dto';
+import { TaskDto } from './task.dto';
 import { TaskService } from './task.service';
-import { Task } from './interfaces/task.interface';
+import { Task } from './task.interface';
 
 @Controller('tasks')
 export class TaskController {
@@ -9,8 +9,6 @@ export class TaskController {
 
     @Post()
         async create(@Body() taskDto: TaskDto, @Ip() ipAddress) {
-            console.log(`bouta create new task...`)
-            console.log(taskDto)
         return this.taskService.create(taskDto);
     }
 
